@@ -11,6 +11,17 @@
     </div>
   <% end %>
 
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name, required: true %>
+
+    <%= form.label :surname %>
+    <%= form.text_field :surname, required: true %>
+
+    <%= form.label :email %>
+    <%= form.email_field :email, required: true %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
